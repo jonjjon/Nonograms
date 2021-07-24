@@ -190,8 +190,9 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                     else {
-                        Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Wrong - "+blackNum , Toast.LENGTH_SHORT).show();
                         nonogram.selected.clear();
+                        clickedNum=0;
                         gridView.setAdapter(nonogram);
                     }
                 }
